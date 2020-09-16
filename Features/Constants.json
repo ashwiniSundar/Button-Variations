@@ -1,0 +1,22 @@
+{
+  "fdConstants": {
+    "user1": "pass1",
+    "heading": "VOBL/BLR",
+    "upcomingFlights": "Upcoming Flights",
+    "viewAll": "View All",
+    "done": "Done",
+    "cancel": "Cancel",
+    "min": "min",
+    "percentage": "%",
+    "flightClosure": "Flight Closure",
+    "edit": "Edit"
+  },
+  "loginConstants": {
+    "login": "Login",
+    "version": "Version 1.0.0",
+    "button": "Button Variants"
+  },
+  "offlineNoticeConstants": {
+    "noInternetConnection": "No Internet Connection"
+  }
+}
