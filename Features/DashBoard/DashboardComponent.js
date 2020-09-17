@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 10,
     marginHorizontal: 80,
-    height: 55,
+    height: 60,
   },
   leftTextSection: {
     flex: 0.4,
