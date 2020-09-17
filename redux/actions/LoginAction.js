@@ -1,5 +1,4 @@
 import {put, takeEvery} from 'redux-saga/effects';
-import {store} from '../store';
 import {SingleTonObjects} from '../../Features/SingleTonObjects/SingleTonObjects';
 
 const LOGINVARIABLE = SingleTonObjects.LOGIN;

@@ -11,7 +11,6 @@ import {
 import appColors from '../../Theme/Colors';
 import {connect} from 'react-redux';
 import {loginActions} from '../../redux/actions/LoginAction';
-import Loader from '../../Features//LoaderComponent/LoaderComponent';
 import Constants from '../../Features/Constants.json';
 import {CustomAlert} from '../../Features/CustomAlert/customAlertComponent';
 import Navigation from '../../NavigationService';
@@ -25,14 +24,12 @@ class LoginComponent extends React.Component {
     this.state = {
       userName: '',
       userPwd: '',
-      loader: false,
     };
   }
 
   _authenticationAPICall = () => {
     if (this.state.userName !== '' && this.state.userPwd !== '') {
       this.props.sendLoginDetails(this.state.userName);
-      //this.setState({loader: true});
       Navigation.navigate('Dashboard');
     } else {
       if (this.state.userName === '' && this.state.userPwd === '') {
@@ -45,7 +42,6 @@ class LoginComponent extends React.Component {
           CustomAlert('Login', 'Please enter password.');
         }
       }
-      this.setState({loader: false});
     }
   };
 
@@ -126,15 +122,12 @@ class LoginComponent extends React.Component {
               </View>
             </View>
           )}
-          {this.state.loader ? (
-            <></>
-          ) : (
-            <View style={styles.LogoAndVersionContainer}>
-              <View>
-                <Text>{Constants.loginConstants.version}</Text>
-              </View>
+
+          <View style={styles.LogoAndVersionContainer}>
+            <View>
+              <Text>{Constants.loginConstants.version}</Text>
             </View>
-          )}
+          </View>
         </SafeAreaView>
       </View>
     );

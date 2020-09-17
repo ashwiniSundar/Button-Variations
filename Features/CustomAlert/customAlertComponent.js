@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import { Alert } from 'react-native'
+import {Alert} from 'react-native';
 
 export const CustomAlert = (titleTxt, bodyTxt, buttonTxt = 'OK') => {
   return Alert.alert(
@@ -11,6 +10,6 @@ export const CustomAlert = (titleTxt, bodyTxt, buttonTxt = 'OK') => {
         onPress: () => {},
       },
     ],
-    { cancelable: true }
-  )
-}
+    {cancelable: true},
+  );
+};

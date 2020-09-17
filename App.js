@@ -3,7 +3,6 @@ import {store, persistor} from './redux/store';
 import {Provider} from 'react-redux';
 import {AppContainer} from './AppNavigator';
 import {PersistGate} from 'redux-persist/integration/react';
-import Splash from './Features/splashComponents/splashScreen';
 
 import Navigation from './NavigationService';
 import SplashScreen from 'react-native-splash-screen';
@@ -16,7 +15,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <PersistGate loading={<Splash />} persistor={persistor}>
+        <PersistGate persistor={persistor}>
           <AppContainer
             ref={navigatorRef => {
               Navigation.setTopLevelNavigator(navigatorRef);

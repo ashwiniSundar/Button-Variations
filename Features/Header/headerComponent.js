@@ -8,9 +8,6 @@ import {
   Text,
 } from 'react-native';
 
-// import RedBackButton from '../../../Assets/svgImages/arrow_left_red.svg';
-// import MoreButton from '../../../Assets/svgImages/more.svg';
-
 export default class HeaderComponent extends Component {
   passingActionToParent(data) {
     if (this.props.headerAction) {
@@ -75,10 +72,6 @@ const styles = StyleSheet.create({
   },
   headerContainer: {
     flexDirection: 'row',
-    // justifyContent: 'space-evenly',
-    // borderBottomWidth: 0.2,
-    // borderBottomColor: 'grey',
-    // borderWidth: 2,
     paddingVertical: 10,
     paddingHorizontal: 5,
     marginHorizontal: 10,
