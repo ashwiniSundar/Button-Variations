@@ -1,3 +1,4 @@
+// MyProfile component with username and email id
 import React, {Component} from 'react';
 import {View, StyleSheet, SafeAreaView, Text} from 'react-native';
 import appColors from '../../Theme/Colors';
