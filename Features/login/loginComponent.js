@@ -1,3 +1,4 @@
+//Login component for authentication and capturing userName in redux
 import * as React from 'react';
 import {
   TextInput,
