@@ -1,3 +1,4 @@
+// Dashboard screen with 4 button variations
 import React, {Component} from 'react';
 import {
   View,
