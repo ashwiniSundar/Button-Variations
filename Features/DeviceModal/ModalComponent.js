@@ -1,3 +1,4 @@
+//Modal component to show the user there device details
 import {
   View,
   Text,
