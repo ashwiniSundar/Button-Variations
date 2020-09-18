@@ -1,3 +1,4 @@
+// Settings component with device platform details using device info library
 import React, {Component} from 'react';
 import {View, StyleSheet, SafeAreaView, Text, Platform} from 'react-native';
 import appColors from '../../Theme/Colors';
